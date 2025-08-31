@@ -4,7 +4,7 @@ export default function About() {
         {/* Lewa strona - miejsce na zdjęcie */}
         <div className="about-photo">
           <img 
-            src="/photos/photo_K.jpeg" 
+            src="/crafting/photos/photo_K.jpeg" 
             alt="Kinga Bigos" 
             className="about-img" 
           />
