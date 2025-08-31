@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import Header from "./components/Header"
+import About from "./components/About"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import './App.css';
 
 function App() {
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const aboutInView = useInView(aboutRef, { amount: 0.2, once: false });
+  const projectsInView = useInView(projectsRef, { amount: 0.1, once: false });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="app-container">
+      <Header />
+      <main className="main-content">
+        <motion.div
+          ref={aboutRef}
+          initial={{ opacity: 1 }}
+          animate={{ opacity: aboutInView ? 1 : 0 }}
+          transition={{ duration: 0.7 }}
         >
-          Learn React
-        </a>
-      </header>
+          <About />
+        </motion.div>
+        <motion.div
+          ref={projectsRef}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: projectsInView ? 1 : 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <Projects />
+        </motion.div>
+      </main>
+      <Contact />
+      <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
