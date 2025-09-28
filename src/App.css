@@ -5,8 +5,6 @@
 	display: block;
 	margin: 0;
 	border-radius: 1.2rem;
-	border: 3px solid #bfae99;
-	box-shadow: 0 6px 32px 0 rgba(91,74,54,0.18), 0 1.5px 8px 0 #bfae99;
 	background: #fffbe6;
 }
 @media (max-width: 700px) {
@@ -437,7 +435,7 @@
 }
 /* HEADER */
 .header {
-	background: linear-gradient(to right, #f5f3ed, #e6e3d6, #bfae99);
+		background: #FFFBF0;
 	color: #5b4a36;
 	padding: 2rem 0;
 	box-shadow: 0 2px 12px rgba(91, 74, 54, 0.08);
