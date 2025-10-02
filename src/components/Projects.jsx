@@ -8,7 +8,7 @@ export default function Projects() {
         {/* Projekt 1 */}
         <div className="project-card">
           <img
-            src="/crafting/photos/photo_coffee.jpeg"
+            src="./photos/photo_coffee.jpeg"
             alt="Sweter Zimowy poranek"
             className="project-img"
           />
@@ -18,7 +18,7 @@ export default function Projects() {
         {/* Projekt 2 */}
         <div className="project-card">
           <img
-            src="/crafting/photos/photo_layer.jpeg"
+            src="./photos/photo_layer.jpeg"
             alt="Kardigan Jesienny liść"
             className="project-img"
           />
@@ -28,7 +28,7 @@ export default function Projects() {
         {/* Projekt 3 */}
         <div className="project-card">
           <img
-            src="/crafting/photos/photo_phone.jpeg"
+            src="./photos/photo_phone.jpeg"
             alt="Chusta Letni wiatr"
             className="project-img"
           />
