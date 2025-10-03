@@ -39,5 +39,5 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_KEY }}
-          source: "build/*"
-          target: "/var/www/html"
+          source: "build"
+          target: "/var/www/html/."
