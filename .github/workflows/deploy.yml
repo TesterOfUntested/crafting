@@ -32,12 +32,7 @@ jobs:
           key: ${{ secrets.VPS_KEY }}
           script: "rm -rf /var/www/html/*"
 
-      - name: Copy files to VPS
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          port: ${{ secrets.VPS_PORT }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_KEY }}
-          source: "build"
-          target: "/var/www/html/."
+      - name: Deploy with rsync
+        run: |
+          rsync -az --delete -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.VPS_PORT }}" \
+            build/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/html/
