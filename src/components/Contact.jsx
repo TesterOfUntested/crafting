@@ -5,7 +5,7 @@ export default function Contact() {
       <p className="contact-desc">Masz pytania lub propozycję współpracy? Odezwij się lub zajrzyj na moje profile!</p>
       <div className="contact-links">
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/kingacrafts/"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"
@@ -16,33 +16,37 @@ export default function Contact() {
           Instagram
         </a>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.ravelry.com/stores/kingacrafts"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="contact-icon">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 8.25A3.75 3.75 0 0 1 20.25 12v3.75A3.75 3.75 0 0 1 16.5 19.5h-9A3.75 3.75 0 0 1 3.75 15.75V12A3.75 3.75 0 0 1 7.5 8.25h9zm-7.5 3.75v3.75m0-3.75V12a1.5 1.5 0 1 1 3 0v3.75m0-3.75V12a1.5 1.5 0 1 1 3 0v3.75" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="contact-icon">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h2l.4 2M7 13h10l3-8H6.4" />
+            <circle cx="10" cy="19" r="1" />
+            <circle cx="17" cy="19" r="1" />
           </svg>
-          LinkedIn
+          Ravelry
         </a>
         <a
-          href="https://buycoffee.to/krzysztofbigos"
+          href="https://linktr.ee/kingacrafts"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="contact-icon">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21h7.5m-7.5 0a3.75 3.75 0 0 1-3.75-3.75V7.5A3.75 3.75 0 0 1 8.25 3.75h7.5A3.75 3.75 0 0 1 19.5 7.5v9.75A3.75 3.75 0 0 1 15.75 21h-7.5zm0 0v-1.5a3.75 3.75 0 0 1 3.75-3.75h0a3.75 3.75 0 0 1 3.75 3.75V21" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="contact-icon">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16M4 12h16" />
           </svg>
-          Postaw kawę
+          Wszystkie linki
         </a>
       </div>
       <a
-        href="mailto:krzysztof.bigos@example.com"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc1TyGvrrcJxUmDcga5YBulPm4w7eF3VjR_qBK4kFvdgPPw6w/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
         className="contact-mail"
       >
-        Napisz maila ✉️
+        Zamów wzór!
       </a>
     </section>
   )
