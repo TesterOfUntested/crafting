@@ -886,9 +886,17 @@
 		min-height: 50vh;
 	}
 	
-	.login-container {
-		padding: 30px 20px;
-		border-radius: 15px;
+	.modal-close {
+		top: 5px !important;
+		right: 5px !important;
+		padding: 4px !important;
+		width: 24px !important;
+		height: 24px !important;
+	}
+	
+	.login-modal-content {
+		padding: 0 !important;
+		max-width: 100% !important;
 	}
 	
 	.login-title {
@@ -902,8 +910,67 @@
 	}
 	
 	.login-btn {
-		padding: 14px 16px;
-		font-size: 0.95rem;
+		padding: 10px 6px !important;
+		font-size: 0.75rem !important;
+		gap: 6px !important;
+		min-height: 42px !important;
+	}
+	
+	.login-icon {
+		width: 12px !important;
+		height: 12px !important;
+	}
+	
+	.modal-close {
+		width: 20px !important;
+		height: 20px !important;
+		top: 3px !important;
+		right: 3px !important;
+	}
+}
+
+@media (max-width: 320px) {
+	.modal-container {
+		padding: 8px 6px !important;
+		max-width: 98% !important;
+		width: 98% !important;
+		border-radius: 6px !important;
+		margin: 1% !important;
+	}
+	
+	.login-title {
+		font-size: 1.1rem !important;
+		margin-bottom: 4px !important;
+	}
+	
+	.login-desc {
+		font-size: 0.7rem !important;
+		margin-bottom: 10px !important;
+	}
+	
+	.login-btn {
+		padding: 8px 4px !important;
+		font-size: 0.7rem !important;
+		gap: 4px !important;
+		min-height: 40px !important;
+	}
+	
+	.login-icon {
+		width: 10px !important;
+		height: 10px !important;
+	}
+}
+
+/* Previous mobile styles for backward compatibility */
+@media (max-width: 768px) {
+	.login-section {
+		padding: 40px 15px;
+		min-height: 50vh;
+	}
+	
+	.login-container {
+		padding: 30px 20px;
+		border-radius: 15px;
 	}
 	
 	.login-form {
