@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, signOut } from "firebase/auth";
-import { auth, googleProvider, facebookProvider } from "../firebase";
+import { auth, googleProvider } from "../firebase";
 import Toast from './Toast';
 import useToast from '../hooks/useToast';
 
