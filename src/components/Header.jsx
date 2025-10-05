@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ onOpenLogin }) {
   return (
     <header className="header">
       <div className="header-inner">
@@ -9,6 +9,9 @@ export default function Header() {
           <a href="#about" className="header-link">O mnie</a>
           <a href="#projects" className="header-link">Projekty</a>
           <a href="#contact" className="header-link">Kontakt</a>
+          <a onClick={onOpenLogin} className="header-link">
+            Zaloguj
+          </a>
         </nav>
       </div>
     </header>

@@ -503,4 +503,199 @@
 	margin: 0 auto;
 }
 
+/* Login Section Styles */
+.login-section {
+	padding: 60px 20px;
+	background: linear-gradient(135deg, #f8f6f0 0%, #ede8d8 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+}
+
+.login-container {
+	background: white;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(191, 174, 153, 0.2);
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+	border: 1px solid #e6e3d6;
+}
+
+/* Modal Styles */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+	backdrop-filter: blur(4px);
+}
+
+.modal-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+	max-width: 400px;
+	width: 90%;
+	max-height: 90vh;
+	overflow-y: auto;
+	z-index: 1001;
+	border: 1px solid #e6e3d6;
+}
+
+.modal-close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 50%;
+	color: #8b7355;
+	transition: all 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-close:hover {
+	background: #f5f3ed;
+	color: #6b5b47;
+}
+
+.login-modal-content {
+	text-align: center;
+}
+
+.login-trigger {
+	background: none !important;
+	border: none !important;
+	cursor: pointer;
+	padding: 0 !important;
+	font: inherit;
+}
+
+.login-trigger:hover {
+	color: #8b7355 !important;
+}
+
+.login-title {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #8b7355;
+	margin-bottom: 10px;
+	font-family: 'Georgia', serif;
+}
+
+.login-desc {
+	color: #6b5b47;
+	margin-bottom: 30px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.login-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.login-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 12px 20px;
+	border: 2px solid transparent;
+	border-radius: 12px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+}
+
+.login-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn-google {
+	background: white;
+	color: #333;
+	border-color: #dadce0;
+}
+
+.login-btn-google:hover {
+	background: #f8f9fa;
+	border-color: #bdc1c6;
+}
+
+.login-btn-facebook {
+	background: #1877F2;
+	color: white;
+	border-color: #1877F2;
+}
+
+.login-btn-facebook:hover {
+	background: #166fe5;
+	border-color: #166fe5;
+}
+
+.login-btn-apple {
+	background: #000;
+	color: white;
+	border-color: #000;
+}
+
+.login-btn-apple:hover {
+	background: #333;
+	border-color: #333;
+}
+
+.login-icon {
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+	.login-section {
+		padding: 40px 15px;
+		min-height: 50vh;
+	}
+	
+	.login-container {
+		padding: 30px 20px;
+		border-radius: 15px;
+	}
+	
+	.login-title {
+		font-size: 1.8rem;
+	}
+	
+	.login-desc {
+		font-size: 0.9rem;
+	}
+	
+	.login-btn {
+		padding: 14px 16px;
+		font-size: 0.95rem;
+	}
+}
+
 /* Custom styles for crafting app can be added here if needed */
