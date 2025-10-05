@@ -9,7 +9,7 @@ export default function Header({ onOpenLogin }) {
           <a href="#about" className="header-link">O mnie</a>
           <a href="#projects" className="header-link">Projekty</a>
           <a href="#contact" className="header-link">Kontakt</a>
-          <a onClick={onOpenLogin} className="header-link">
+          <a href="#" onClick={onOpenLogin} className="header-link">
             Zaloguj
           </a>
         </nav>
