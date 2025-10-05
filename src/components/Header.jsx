@@ -10,7 +10,7 @@ export default function Header({ onOpenLogin }) {
           <a href="#projects" className="header-link">Projekty</a>
           <a href="#contact" className="header-link">Kontakt</a>
           <a 
-            href="#" 
+            href="#header" 
             onClick={(e) => { e.preventDefault(); onOpenLogin(); }} 
             className="header-link"
             role="button"
