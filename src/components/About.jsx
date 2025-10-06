@@ -1,12 +1,15 @@
+import FirebaseImage from './FirebaseImage';
+
 export default function About() {
     return (
       <section id="about" className="about-section">
         {/* Lewa strona - miejsce na zdjęcie */}
         <div className="about-photo">
-          <img 
-            src="./photos/photo_K.jpeg" 
+          <FirebaseImage 
+            path="photo_K.jpeg" 
             alt="Kinga Bigos" 
-            className="about-img" 
+            className="about-img"
+            fallbackSrc="./photos/photo_K.jpeg"
           />
         </div>
         

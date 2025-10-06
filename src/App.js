@@ -5,6 +5,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Login from "./components/Login"
 import Modal from "./components/Modal"
+import { AuthProvider } from "./contexts/AuthContext"
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import './App.css';
@@ -21,33 +22,35 @@ function App() {
   const closeLoginModal = () => setIsLoginModalOpen(false);
 
   return (
-    <div className="app-container">
-      <Header onOpenLogin={openLoginModal} />
-      <main className="main-content">
-        <motion.div
-          ref={aboutRef}
-          initial={{ opacity: 1 }}
-          animate={{ opacity: aboutInView ? 1 : 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <About />
-        </motion.div>
-        <motion.div
-          ref={projectsRef}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: projectsInView ? 1 : 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <Projects />
-        </motion.div>
-      </main>
-      <Contact />
-      <Footer />
-      
-      <Modal isOpen={isLoginModalOpen} onClose={closeLoginModal}>
-        <Login onClose={closeLoginModal} />
-      </Modal>
-    </div>
+    <AuthProvider>
+      <div className="app-container">
+        <Header onOpenLogin={openLoginModal} />
+        <main className="main-content">
+          <motion.div
+            ref={aboutRef}
+            initial={{ opacity: 1 }}
+            animate={{ opacity: aboutInView ? 1 : 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <About />
+          </motion.div>
+          <motion.div
+            ref={projectsRef}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: projectsInView ? 1 : 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <Projects />
+          </motion.div>
+        </main>
+        <Contact />
+        <Footer />
+        
+        <Modal isOpen={isLoginModalOpen} onClose={closeLoginModal}>
+          <Login onClose={closeLoginModal} />
+        </Modal>
+      </div>
+    </AuthProvider>
   )
 }
 
