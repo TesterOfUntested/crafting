@@ -487,6 +487,43 @@
 	color: #5b4a36;
 	border-bottom: 2px solid #8a9a7b;
 }
+
+/* User menu styles */
+.user-menu {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.user-greeting {
+	color: #6e6b5e;
+	font-weight: 500;
+	font-size: 0.9rem;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 0.2rem;
+}
+.logout-link {
+	color: #8a4040;
+	font-size: 0.9rem;
+}
+.logout-link:hover {
+	color: #7a3030;
+	border-bottom-color: #8a4040;
+}
+
+@media (max-width: 700px) {
+	.user-menu {
+		flex-direction: column;
+		gap: 0.5rem;
+		align-items: center;
+	}
+	.user-greeting {
+		font-size: 0.85rem;
+		text-align: center;
+	}
+	.logout-link {
+		font-size: 0.9rem;
+	}
+}
 /* Podstawowy układ po usunięciu Tailwinda */
 .app-container {
 	min-height: 100vh;
@@ -539,7 +576,7 @@
 .modal-container {
 	position: fixed;
 	top: 40%;
-	left: 50%;
+	left: 40%;
 	transform: translate(-50%, -50%);
 	background: white;
 	padding: 40px;
